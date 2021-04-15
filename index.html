@@ -1,0 +1,103 @@
+<html lang="en" dir="ltr">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>َLogin</title>
+  </head>
+  <body>
+   
+    <form class="box" action="index.html" method="post">
+    <h1>Login</h1>
+    <input type = "text" name = "" placeholder = Username>
+    <input type = "password" name = "" placeholder = Password>
+      <input type = "submit" name = "" value = "Login">
+    </form>
+</html>
+
+<style>
+
+  body{
+
+    margin-top: 0px;
+    padding: 0;
+    font-family: Cooper Black;
+    background: linear-gradient(45deg, #6d9df0, #785dc9, rgb(84, 51, 102));
+    background-size: 500% 500%;
+    animation: colors 10s ease infinite;
+    
+  } 
+
+  @keyframes colors {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%; 
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+  .box{
+    margin: 0px;
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient(to right, #8ab77d, #04d9a4);
+    text-align: center;
+    border-radius: 24px;
+    border: 2px solid black
+  }
+
+ .box input[type = "text"],.box input[type = "password"]{
+      border:0;
+      background: none;
+      width: 200px;
+      margin: 20px auto;
+      border-radius: 24px;
+      padding: 14px 8px;
+      text-align: center;
+      outline: none;
+      border: 2px solid #7462fb;
+      transition: 0.25s;
+      display: block;
+  }
+
+  .box input[type = "text"]:focus,.box input[type = "password"]:focus{
+    width: 250px;
+    padding: 14px;
+    border-color: black;}
+
+  .box input[type = "submit"]{
+      display: block;
+      margin: 0px auto;
+      width: 100px;
+      border: 2px solid black;
+      border-radius: 24px;
+      transition: 0.40s;
+      background: none;
+      cursor: pointer;
+      padding: 10px;
+      
+  }
+
+  .box input[type = "submit"]:hover{
+    font-style:italic;
+    color: white;
+    width: 110px;
+    background: black;   
+  }
+
+ .box h1{
+    margin-top: -10px;
+    color: black;
+    padding: 1px;
+    text-transform: uppercase;
+  
+  }
+
+</style>
